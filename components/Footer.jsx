@@ -1,8 +1,10 @@
+"use client"
+
 import React from "react";
 
 import Wrapper from "./Wrapper";
 import gmailIcon from "../public/assets/email-icon.png";
-import { scrollTo } from "../helper";
+import { scrollTo } from "../utils/helper";
 
 const Footer = () => {
     return (

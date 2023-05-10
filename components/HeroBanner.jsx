@@ -9,6 +9,8 @@ import Wrapper from "./Wrapper";
 // import gmailIcon from "../assets/email-icon.png";
 import { scrollTo } from "../utils/helper";
 import { useFollowPointer } from "./useFollowPointer";
+import Space from "./Space";
+import TypewriterComp from "./TypeWriterComp";
 
 const HeroBanner = () => {
   const ref = useRef(null);
@@ -35,136 +37,52 @@ const HeroBanner = () => {
       <Wrapper>
         {/* NAVBAR START */}
         <motion.div
-          className="hidden md:flex items-center justify-between mt-[40px] 2xl:mt-[63px] relative"
+          className=" md:flex items-center justify-between mt-[40px] 2xl:mt-[63px] relative"
           initial={{ y: -200, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.25 }}
         >
-          <div className="flex items-center gap-[6px]">
-            <div className="w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center">
-              <img src="../assets/email-icon.png" alt="" className="w-[18px]" />
-            </div>
-            <div>jsdev@gmail.com</div>
+          <div className="flex text-[8px] absolute items-center gap-[6px] right-8">
+            <Space></Space>
           </div>
-          <ul className="flex 2xl:text-[20px]">
-            <li
-              className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("about")}
-            >
-              About me
-            </li>
-            <li
-              className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("skills")}
-            >
-              Skills
-            </li>
-            <li
-              className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("work")}
-            >
-              Work
-            </li>
-            <li
-              className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("contact")}
-            >
-              Contact
-            </li>
-          </ul>
         </motion.div>
         {/* NAVBAR END */}
 
         {/* BIG HEADING START */}
-        <motion.div
-          className="flex justify-center text-center mt-14 mb-10 relative"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h1 className="text-[50px] md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
-            I Am A FullStacks
-            <br className="invisible md:visible" />
-            Developer
-          </h1>
-        </motion.div>
-        {/* BIG HEADING END */}
-
-        {/* INTRO START */}
-        <motion.div
-          className="flex flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative"
-          initial={{ y: 300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.25 }}
-        >
-          <div className="font-light mb-4">
-            👋 Hi, I Am <span className="font-semibold">John Doe</span>
-          </div>
-          <div className="max-w-[510px]">
-            I create and maintain modern websites and applications. I solve all
-            your business problems. Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry.
-          </div>
-        </motion.div>
-        {/* INTRO END */}
-
-        {/* NUMBER BLOCK START */}
-        <motion.div
-          className="hidden md:flex gap-8 relative z-10"
-          initial={{ y: 300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.25 }}
-        >
-          {/* START */}
-          <div className="flex items-center gap-3">
-            <div className="text-[80px] font-light">80+</div>
-            <div className="leading-[22px]">
-              SUCCESSFULLY
-              <br />
-              COMPLETED
-              <br />
-              PROJECTS
-            </div>
-          </div>
-          {/* END */}
-
-          {/* START */}
-          <div className="flex items-center gap-3">
-            <div className="text-[80px] font-light">15+</div>
-            <div className="leading-[22px]">
-              YEARS OF
-              <br />
-              EXPERIENCE
-            </div>
-          </div>
-          {/* END */}
-        </motion.div>
-        {/* NUMBER BLOCK END */}
-
-        {/* PERSON BLOCK START */}
-        <motion.div
-          className="w-[300px] md:w-[360px] 2xl:w-[475px] absolute bottom-0 left-[50%] -translate-x-1/2"
-          initial={{ y: 200, x: "-50%" }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {/* <img src="../assets/man.png" alt="man" /> */}
-
-          {/* HIRE ME BUTTON START */}
-          <div
-            className="absolute top-[140px] -right-10 2xl:top-[240px] 2xl:-right-10 w-[140px] h-[140px] rounded-full bg-white/[0.7] flex flex-col justify-center items-center gap-2 backdrop-blur-sm cursor-pointer transition-transform scale-[0.65] md:scale-100 active:scale-[0.55] md:active:scale-90"
-            onClick={() => scrollTo("contact")}
+        <div className="flex flex-col justify-center items-center h-screen">
+          <motion.div
+            className="flex justify-center text-center mt-14 mb-10 relative"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            <img
-              src="../assets/external-link-icon.png"
-              alt=""
-              className="w-[15px]"
-            />
-            <div className="text-black">Hire Me</div>
-          </div>
-          {/* HIRE ME BUTTON END */}
-        </motion.div>
-        {/* PERSON BLOCK END */}
+            <h1 className="text-[50px] md:-mt-16 md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
+              {/* I Am A FullStacks
+              <br className="invisible md:visible" />
+              Developer */}
+              <TypewriterComp></TypewriterComp>
+
+            </h1>
+          </motion.div>
+          {/* BIG HEADING END */}
+
+          {/* INTRO START */}
+          <motion.div
+            className="block sm:hidden  flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative"
+            initial={{ y: 300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+          >
+            <div className="font-light mb-4">
+              👋 Hi, I Am <span className="font-semibold">John Doe</span>
+            </div>
+            <div className="max-w-[510px]">
+              I create and maintain modern websites and applications. I solve
+              all your business problems. Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry.
+            </div>
+          </motion.div>
+        </div>
       </Wrapper>
     </div>
   );

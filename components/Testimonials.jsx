@@ -12,13 +12,15 @@ import pe2 from "../public/assets/sec-4-p-e-2.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Carousel } from "react-responsive-carousel";
+import Link from "next/link";
 
 const Testimonials = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 4500], [1000, 0], { clamp: false });
   const y2 = useTransform(scrollY, [0, 4500], [2000, 0], { clamp: false });
   return (
-    <div className="w-full py-[50px] md:py-[100px] bg-white relative overflow-hidden">
+    <div className="w-full py-[50px] md:py-[100px] bg-white relative overflow-hidden"
+    id="clients">
       {/* BACKGROUND ELEMENTS START */}
       <span className="sec-2-bg-gradient" />
       <motion.img
