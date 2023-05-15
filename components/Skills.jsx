@@ -11,23 +11,30 @@ import Achievements from "./Achievements";
 import Div from "./Div";
 
 // IMAGES
-import sk1 from "../public/assets/sk-1.png";
-import sk2 from "../public/assets/sk-2.png";
-import sk3 from "../public/assets/sk-3.png";
-import sk4 from "../public/assets/sk-4.png";
-import sk5 from "../public/assets/sk-5.png";
-import sk6 from "../public/assets/sk-6.png";
-import sk7 from "../public/assets/sk-7.png";
-import sk8 from "../public/assets/sk-8.png";
-import sk9 from "../public/assets/sk-9.png";
-import sk10 from "../public/assets/sk-10.png";
-import sk11 from "../public/assets/sk-11.png";
+import sk1 from "../public/assets/nextjs-icon.png";
+import sk2 from "../public/assets/css_tailwind_logo_icon_214735.png";
+import sk3 from "../public/assets/react.png";
+import sk7 from "../public/assets/redux.png";
+import sk4 from "../public/assets/node.png";
+import sk5 from "../public/assets/ex.png";
+import sk6 from "../public/assets/sql.png";
+import sk8 from "../public/assets/mongo.png";
+import sk9 from "../public/assets/html.png";
+import sk10 from "../public/assets/css1.png";
+import sk12 from "../public/assets/js2.png";
+import sk13 from "../public/assets/typescript.png";
+import sk14 from "../public/assets/python.png";
+import sk15 from "../public/assets/git.png";
+import sk16 from "../public/assets/android.png";
+import sk11 from "../public/assets/solidity.png";
 
-import pattern from "../public/assets/heading-pattern.png";
-import pe1 from "../public/assets/sec-3-p-e-1.png";
-import pe2 from "../public/assets/sec-3-p-e-2.png";
-import pe3 from "../public/assets/sec-3-p-e-3.png";
-
+// import pattern from "../public/assets/heading-pattern.png";
+// import pe1 from "../public/assets/sec-3-p-e-1.png";
+// import pe2 from "../public/assets/sec-3-p-e-2.png";
+// import pe3 from "../public/assets/sec-3-p-e-3.png";
+import Wrapper2 from "./Wrapper2";
+import H3lios from "./H3lios";
+import MoreDetails from "./MoreDetails";
 
 const Skills = () => {
   const { scrollY } = useScroll();
@@ -35,120 +42,104 @@ const Skills = () => {
   const y2 = useTransform(scrollY, [0, 2200], [1500, 0], { clamp: false });
   const y3 = useTransform(scrollY, [0, 2700], [2000, 0], { clamp: false });
   return (
-    <div
-      id="skills"
-      className="bg-[#111111] py-[50px] md:py-[100px] relative overflow-hidden"
-    >
-      {/* BACKGROUND ELEMENTS START */}
-      <div className="sec-3-bg-gradient-1" />
-      <div className="sec-3-bg-gradient-2" />
-      <motion.img
-        className="sec-3-p-e-1"
-        style={{ y: y1 }}
-        src={pe1.src}
-      />
-      <motion.img className="sec-3-p-e-2" style={{ y: y2 }} src={pe2.src} />
-      <motion.img className="sec-3-p-e-3" style={{ y: y3 }} src={pe3.src} />
-      {/* BACKGROUND ELEMENTS END */}
-      <Wrapper>
+    <div id="skills" className="bg-black   relative overflow-hidden">
+      <Wrapper2>
         {/* SKILL ICONS START */}
-        <Div className="grid grid-cols-4 gap-3 md:grid-cols-11 relative">
+
+        <Div className=" mt-10 mb-10 relative">
+          <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald uppercase mb-10 text-[#f6f6f6]">
+            <h2>Teck Stacks</h2>
+          </div>
+          <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1000px] mx-auto">
+            <p>
+              I am consistently engaged in a dynamic exploration of cutting-edge
+              technologies, ensuring that I stay updated and abreast of the
+              latest trends in the ever-evolving tech landscape. My primary
+              focus lies in the MERN stack, with particular fondness for Next.js
+              and Tailwind CSS. Below are the tech tools and programming
+              languages that I am proficient in and actively follow:
+            </p>
+          </div>
+        </Div>
+        <Div className="grid grid-cols-4 gap-3 md:grid-cols-6 lg:grid-cols-8 relative mb-10">
           <SkillIcon path={sk1} />
           <SkillIcon path={sk2} />
           <SkillIcon path={sk3} />
+          <SkillIcon path={sk7} />
           <SkillIcon path={sk4} />
           <SkillIcon path={sk5} />
           <SkillIcon path={sk6} />
-          <SkillIcon path={sk7} />
           <SkillIcon path={sk8} />
           <SkillIcon path={sk9} />
           <SkillIcon path={sk10} />
+          <SkillIcon path={sk12} />
+          <SkillIcon path={sk13} />
+          <SkillIcon path={sk14} />
+          <SkillIcon path={sk15} />
+          <SkillIcon path={sk16} />
           <SkillIcon path={sk11} />
         </Div>
         {/* SKILL ICONS END */}
 
-        {/* SERVICES SECTION START */}
-        <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px] relative">
-          {/* SERVICES START */}
-          <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10">
-            <Service
-              num="1"
-              title="Ui/Ux Design"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-              data={[
-                "Prototype",
-                "Wireframe",
-                "User Experience",
-                "Prototype",
-                "Prototype",
-              ]}
-            />
-            <Service
-              num="2"
-              title="Graphic Designing"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-              data={[
-                "Prototype",
-                "Wireframe",
-                "User Experience",
-                "Prototype",
-                "Prototype",
-              ]}
-            />
-            <Service
-              num="3"
-              title="Frontend Development"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-              data={[
-                "Prototype",
-                "Wireframe",
-                "User Experience",
-                "Prototype",
-                "Prototype",
-              ]}
-            />
-            <Service
-              num="4"
-              title="Wordpress Development"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-              data={[
-                "Prototype",
-                "Wireframe",
-                "User Experience",
-                "Prototype",
-                "Prototype",
-              ]}
-            />
+        {/* <Wrapper2>
+          <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px] relative">
+            <div className=" flex flex-col gap-6 md:gap-10 ">
+              <Service
+                num="1"
+                title="Ui/Ux Design"
+                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                data={[
+                  "Prototype",
+                  "Wireframe",
+                  "User Experience",
+                  "Prototype",
+                  "Prototype",
+                ]}
+              />
+              <Service
+                num="2"
+                title="Graphic Designing"
+                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                data={[
+                  "Prototype",
+                  "Wireframe",
+                  "User Experience",
+                  "Prototype",
+                  "Prototype",
+                ]}
+              />
+              <Service
+                num="3"
+                title="Frontend Development"
+                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                data={[
+                  "Prototype",
+                  "Wireframe",
+                  "User Experience",
+                  "Prototype",
+                  "Prototype",
+                ]}
+              />
+              <Service
+                num="4"
+                title="Wordpress Development"
+                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                data={[
+                  "Prototype",
+                  "Wireframe",
+                  "User Experience",
+                  "Prototype",
+                  "Prototype",
+                ]}
+              />
+            </div>
           </div>
-          {/* SERVICES END */}
-
-          {/* SECTION HEADING START */}
-          <div className="flex flex-wrap justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
-            <span>Solving</span>
-            <span>Problems</span>
-            <span className="flex items-center gap-2">
-                            Through
-                            <img
-                                src={pattern.src}
-                                className="block md:hidden w-[80px] mt-1"
-                            />
-                        </span>
-                        <span className="flex items-center gap-4">
-                            Good{" "}
-                            <img
-                                src={pattern.src}
-                                className="hidden md:block md:w-[140px] 2xl:w-[190px] mt-3"
-                            />
-                        </span>
-            <span>Services</span>
-          </div>
-          {/* SECTION HEADING END */}
-        </div>
-        {/* SERVICES SECTION END */}
-
-        <Portfolio />
-        <Achievements />
-      </Wrapper>
+        </Wrapper2> */}
+        {/* <Achievements /> */}
+      </Wrapper2>
+      <MoreDetails></MoreDetails>
+      <Portfolio />
+      <H3lios></H3lios>
     </div>
   );
 };

@@ -18,21 +18,25 @@ const HeroBanner = () => {
   return (
     <div
       id="hero"
-      className="w-full h-[100vh] relative bg-[#111111] overflow-hidden"
+      className="w-full h-[100vh] relative bg-[#f6f6f6]    overflow-hidden"
     >
       {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
       <motion.span
         ref={ref}
         animate={{ x, y }}
-        className="hidden md:block sec-1-bg-gradient-1-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute md:left-[1000px] 2xl:left-[1309px] -top-[709px]"
+        className="hidden md:block  md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute md:left-[1000px] 2xl:left-[1309px] -top-[709px]"
       />
-      <span className="hidden md:block sec-1-bg-gradient-2-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute left-[105px] top-[672px] md:top-[500px] 2xl:top-[672px]" />
+      {/* <span className="hidden md:block sec-1-bg-gradient-2-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute left-[105px] top-[672px] md:top-[500px] 2xl:top-[672px]" /> */}
       {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
 
       {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
-      <span className="md:hidden sec-1-bg-gradient-1-mobile absolute w-[212px] h-[211px] left-[285px] -top-[25px]" />
-      <span className="md:hidden sec-1-bg-gradient-2-mobile absolute w-[636px] h-[635px] -left-[334px] top-[672px]" />
+      {/* <span className="md:hidden  absolute w-[212px] h-[211px] left-[285px] -top-[25px]" />
+      <span className="md:hidden  absolute w-[636px] h-[635px] -left-[334px] top-[672px]" /> */}
       {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
+
+      {/* <span className="sec-2-bg-gradient" /> */}
+      {/* <motion.img className="sec-2-p-e-1" style={{ y: y1 }} src="../assets/sec-2-p-e-1.png" /> */}
+      {/* <motion.img className="sec-2-p-e-2" style={{ y: y2 }} src="../assets/sec-2-p-e-2.png" /> */}
 
       <Wrapper>
         {/* NAVBAR START */}
@@ -56,30 +60,26 @@ const HeroBanner = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-[50px] md:-mt-16 md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
-              {/* I Am A FullStacks
+            <h1 className="text-[50px] text-black/90 md:-mt-16 md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
+              I Am A FullStack
               <br className="invisible md:visible" />
-              Developer */}
-              <TypewriterComp></TypewriterComp>
-
+              Developer
+              {/* <TypewriterComp></TypewriterComp> */}
             </h1>
           </motion.div>
           {/* BIG HEADING END */}
 
           {/* INTRO START */}
           <motion.div
-            className="block sm:hidden  flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative"
+            className="block sm:hidden text-black/90  flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative"
             initial={{ y: 300, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.25 }}
           >
-            <div className="font-light mb-4">
-              👋 Hi, I Am <span className="font-semibold">John Doe</span>
-            </div>
+       
             <div className="max-w-[510px]">
-              I create and maintain modern websites and applications. I solve
-              all your business problems. Lorem Ipsum is simply dummy text of
-              the printing and typesetting industry.
+              “If something is important enough, even if the odds are stacked
+              against you, you should still do it.” - <span className="font-semibold">Elon Musk</span>
             </div>
           </motion.div>
         </div>

@@ -15,10 +15,14 @@ module.exports = {
       },
       fontFamily: {
         oswald: "Oswald, sans-serif",
+        urbanist: "Urbanist, sans-serif",
       },
       extend: {
         transitionDuration: {
           2500: "2500ms",
+        },
+        colors: {
+          'my-grey': '#dee2e6',
         },
       },
     },

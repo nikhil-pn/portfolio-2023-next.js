@@ -22,6 +22,14 @@ export const filters = [
         name: "Website",
         id: "website",
     },
+    {
+        name: "Frontend",
+        id: "website",
+    },
+    {
+        name: "Backend",
+        id: "website",
+    },
 ];
 
 export const projects = [
@@ -60,23 +68,23 @@ export const projects = [
 export const achievements = [
     {
         id: 1,
-        year: 80,
-        description: "SUCCESSFULLY<br />COMPLETED<br />PROJECTS",
+        year: 70,
+        description: "SUCCESSFULLY<br />COMPLETED<br />ORDERS",
     },
     {
         id: 2,
-        year: 15,
-        description: "YEARS OF<br />EXPERIENCE",
+        year: 5,
+        description: "YEARS OF<br /> FREELANCE <br/> EXPERIENCE",
     },
     {
         id: 3,
-        year: 25,
-        description: "TECHNOLOGIES",
+        year: 50,
+        description: "Open <br/>source <br/>Projects",
     },
     {
         id: 4,
-        year: 70,
-        description: "COMMUNITY<br />POSTS",
+        year: 12,
+        description: "Thousand <br/>Istagram<br />Followers",
     },
 ];
 
