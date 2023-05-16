@@ -82,14 +82,12 @@ const About = () => {
           <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1000px] mx-auto ">
             <p className="mb-2">
               I'm Nikhil Pn, a Fullstack developer based in Kochi, India. With a
-              passion for Technology and Entrepreneurship!
-            </p>
-            <p className="mb-2">
-              In 2017, I established a prominent brand on YouTube called "Ntec
-              Phones" which boasts an impressive subscriber base of over 32,000
-              and an astounding total of 6 million plus views.Through this
-              platform, I have leveraged my expertise and knowledge in
-              smartphones to engage with a diverse audience.
+              passion for Technology and Entrepreneurship! In 2017, I
+              established a prominent brand on YouTube called "Ntec Phones"
+              which boasts an impressive subscriber base of over 32,000 and an
+              astounding total of 6 million plus views.Through this platform, I
+              have leveraged my expertise and knowledge in smartphones to engage
+              with a diverse audience.
             </p>
             <p>
               I have guided individuals in selecting top-notch smartphones and
@@ -108,6 +106,9 @@ const About = () => {
             src="/826shots_so.png"
           ></img>
         </Link>
+        <button className="bg-[#f6f6f6] mt-4 rounded-none h-[48px] w-full   justify-center text-[16px] text-black  transition-transform active:scale-[0.95]">
+          Download CV
+        </button>
         {/* <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-#f6f6f6 text-center max-w-[1000px] mx-auto">
             If you're interested in shopping on{" "}
             <Link href="https://fiverr.com/h3liosdesign" target="_blank">

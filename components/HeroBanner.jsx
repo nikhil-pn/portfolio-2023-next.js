@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import Wrapper from "./Wrapper";
@@ -10,9 +10,11 @@ import Wrapper from "./Wrapper";
 import { scrollTo } from "../utils/helper";
 import { useFollowPointer } from "./useFollowPointer";
 import Space from "./Space";
-import TypewriterComp from "./TypeWriterComp";
+import MenuHover from "./MenuHover";
 
 const HeroBanner = () => {
+  const [showCatMenu, setShowCatMenu] = useState(false);
+
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
   return (
@@ -26,17 +28,6 @@ const HeroBanner = () => {
         animate={{ x, y }}
         className="hidden md:block  md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute md:left-[1000px] 2xl:left-[1309px] -top-[709px]"
       />
-      {/* <span className="hidden md:block sec-1-bg-gradient-2-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute left-[105px] top-[672px] md:top-[500px] 2xl:top-[672px]" /> */}
-      {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
-
-      {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
-      {/* <span className="md:hidden  absolute w-[212px] h-[211px] left-[285px] -top-[25px]" />
-      <span className="md:hidden  absolute w-[636px] h-[635px] -left-[334px] top-[672px]" /> */}
-      {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
-
-      {/* <span className="sec-2-bg-gradient" /> */}
-      {/* <motion.img className="sec-2-p-e-1" style={{ y: y1 }} src="../assets/sec-2-p-e-1.png" /> */}
-      {/* <motion.img className="sec-2-p-e-2" style={{ y: y2 }} src="../assets/sec-2-p-e-2.png" /> */}
 
       <Wrapper>
         {/* NAVBAR START */}
@@ -46,11 +37,15 @@ const HeroBanner = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.25 }}
         >
-          <div className="flex text-[8px] absolute items-center gap-[6px] right-8">
-            <Space></Space>
+          <div
+            className={`text-[8px] fixed z-50 items-center gap-[6px] right-8`}
+          >
+            <Space
+              showCatMenu={showCatMenu}
+              setShowCatMenu={setShowCatMenu}
+            ></Space>
           </div>
         </motion.div>
-        {/* NAVBAR END */}
 
         {/* BIG HEADING START */}
         <div className="flex flex-col justify-center items-center h-screen">
@@ -76,10 +71,10 @@ const HeroBanner = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.25 }}
           >
-       
             <div className="max-w-[510px]">
               “If something is important enough, even if the odds are stacked
-              against you, you should still do it.” - <span className="font-semibold">Elon Musk</span>
+              against you, you should still do it.” -{" "}
+              <span className="font-semibold">Elon Musk</span>
             </div>
           </motion.div>
         </div>
