@@ -1,10 +1,38 @@
 "use client";
 import Div from "@/components/Div";
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect, useRef } from "react";
 import Wrapper2 from "./Wrapper2";
 
 const Ntec = () => {
+  const videoRef = useRef(null);
+  const controls = useAnimation();
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    const handleMouseEnter = () => {
+      if (videoElement.paused) {
+        videoElement.muted = false; // Unmute the video
+        videoElement.play();
+      }
+    };
+
+    const handleMouseLeave = () => {
+      if (!videoElement.paused) {
+        videoElement.pause();
+        videoElement.currentTime = 0; // Reset the video to the beginning
+      }
+    };
+
+    videoElement.addEventListener("mouseenter", handleMouseEnter);
+    videoElement.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      videoElement.removeEventListener("mouseenter", handleMouseEnter);
+      videoElement.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
   return (
     <div
       id="contact"
@@ -31,7 +59,14 @@ const Ntec = () => {
         <section className="flex justify-center items-center w-full">
           <div className=" bg w-full">
             <div className=" md:w-[500px] w-full bg-black mx-auto hover:scale-105 duration-200">
-              <motion.video loop autoPlay muted playsInline>
+              <motion.video
+                ref={videoRef}
+                loop
+                autoPlay
+                playsInline
+                animate={controls}
+               
+              >
                 <source src="/ntecend.mp4" type="video/mp4" />
               </motion.video>
             </div>
