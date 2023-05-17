@@ -42,10 +42,9 @@ const Skills = () => {
   const y2 = useTransform(scrollY, [0, 2200], [1500, 0], { clamp: false });
   const y3 = useTransform(scrollY, [0, 2700], [2000, 0], { clamp: false });
   return (
-    <div id="skills" className="bg-black   relative overflow-hidden">
+    <div id="Skills" className="w-full py-[50px] md:py-[100px] bg-black  relative overflow-hidden">
       <Wrapper2>
         {/* SKILL ICONS START */}
-
         <Div className=" mt-10 mb-10 relative">
           <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald uppercase mb-10 text-[#f6f6f6]">
             <h2>Teck Stacks</h2>
@@ -80,62 +79,6 @@ const Skills = () => {
           <SkillIcon path={sk11} />
         </Div>
         {/* SKILL ICONS END */}
-
-        {/* <Wrapper2>
-          <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px] relative">
-            <div className=" flex flex-col gap-6 md:gap-10 ">
-              <Service
-                num="1"
-                title="Ui/Ux Design"
-                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-                data={[
-                  "Prototype",
-                  "Wireframe",
-                  "User Experience",
-                  "Prototype",
-                  "Prototype",
-                ]}
-              />
-              <Service
-                num="2"
-                title="Graphic Designing"
-                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-                data={[
-                  "Prototype",
-                  "Wireframe",
-                  "User Experience",
-                  "Prototype",
-                  "Prototype",
-                ]}
-              />
-              <Service
-                num="3"
-                title="Frontend Development"
-                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-                data={[
-                  "Prototype",
-                  "Wireframe",
-                  "User Experience",
-                  "Prototype",
-                  "Prototype",
-                ]}
-              />
-              <Service
-                num="4"
-                title="Wordpress Development"
-                desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-                data={[
-                  "Prototype",
-                  "Wireframe",
-                  "User Experience",
-                  "Prototype",
-                  "Prototype",
-                ]}
-              />
-            </div>
-          </div>
-        </Wrapper2> */}
-        {/* <Achievements /> */}
       </Wrapper2>
       <MoreDetails></MoreDetails>
       <Portfolio />

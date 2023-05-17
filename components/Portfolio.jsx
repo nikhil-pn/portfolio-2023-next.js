@@ -22,10 +22,12 @@ const Portfolio = () => {
   };
 
   return (
-    <div id="work" className="mt-20 relative">
+    <div
+      id="Projects"
+      className="w-full py-[50px] md:py-[100px] bg-black  relative overflow-hidden"
+    >
       <Wrapper2>
         {/* SECTION HEADING START */}
-
         <Div className="mt-10 mb-10 relative">
           <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald uppercase mb-10 text-[#f6f6f6]">
             <h2>latest projects</h2>

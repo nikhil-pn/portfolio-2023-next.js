@@ -10,7 +10,7 @@ import Wrapper2 from "./Wrapper2";
 const Contact = () => {
   return (
     <div
-      id="contact"
+      id="Contact"
       className="w-full py-[50px] md:py-[100px] bg-[#F2F2F2] relative overflow-hidden"
     >
       <Wrapper2>

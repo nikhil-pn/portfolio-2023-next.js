@@ -1,5 +1,5 @@
 import { scrollTo } from "@/utils/helper";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 
 const data = [
@@ -13,6 +13,22 @@ const data = [
   // { id: 6, name: "Fiverr", url: "/contact" },
 ];
 const Space = ({ showCatMenu, setShowCatMenu }) => {
+  const popupRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        setShowCatMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div className="main">
       <button
@@ -974,13 +990,19 @@ const Space = ({ showCatMenu, setShowCatMenu }) => {
                   {/* <BsChevronDown size={14} /> */}
 
                   {showCatMenu && (
-                    <ul className="bg-white absolute -mt-14 -mr-4  top-0 right-0 min-w-[150px]  md:top-6 md:left-0 md:min-w-[180px]  text-black shadow-lg">
+                    <ul
+                      ref={popupRef}
+                      className="bg-white absolute -mt-14 -mr-4  top-0 right-0 min-w-[150px]  md:top-6 md:left-0 md:min-w-[180px]  text-black shadow-lg"
+                    >
                       {data?.map((subMenu) => {
                         return (
                           <li
+                            key={subMenu.id}
                             className="h-10 flex justify-center items-center px-3 hover:bg-black/[0.03] rounded-md"
                             onClick={() => {
-                              scrollTo("hero"), setShowCatMenu(false);
+                              scrollTo(subMenu.name),
+                                console.log(subMenu.name),
+                                setShowCatMenu(false);
                             }}
                           >
                             {subMenu.name}
