@@ -1,4 +1,4 @@
-import p1 from "../public/assets/project-1.png";
+import p1 from "../public/assets/project9.webp";
 import p2 from "../public/assets/project-2.png";
 import p3 from "../public/assets/project-3.png";
 import p4 from "../public/assets/project-4.png";
@@ -24,11 +24,11 @@ export const filters = [
     },
     {
         name: "Frontend",
-        id: "website",
+        id: "frontend",
     },
     {
         name: "Backend",
-        id: "website",
+        id: "backend",
     },
 ];
 
@@ -37,31 +37,43 @@ export const projects = [
         name: "Join the Innovative Car Wash Service",
         image: p1,
         tags: ["dashboard", "mobile-app"],
+        link: "http://h3lios.in"
     },
     {
         name: "Your Luggage is in Safe Hands",
         image: p2,
         tags: ["dashboard", "website"],
+        link: "http://h3lios.in"
     },
     {
         name: "The Art of Hiring",
         image: p3,
         tags: ["mobile-app"],
+        link: "http://h3lios.in"
     },
     {
         name: "We Are Solving Global Problems",
         image: p4,
         tags: ["mobile-app"],
+        link: "http://h3lios.in"
     },
     {
         name: "The English Tea Ceremony",
         image: p5,
         tags: ["website", "dashboard"],
+        link: "http://h3lios.in"
     },
     {
         name: "Saving Photo Memories",
         image: p6,
         tags: ["website"],
+        link: "http://h3lios.in"
+    },
+    {
+        name: "H3lios.in Ecommerce for Fullstack Apps",
+        image: p1,
+        tags: ["frontend"],
+        link: "http://h3lios.in"
     },
 ];
 

@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { projects, filters } from "../utils/data";
 import Div from "./Div";
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
-import Wrapper from "./Wrapper";
 import Wrapper2 from "./Wrapper2";
 
 const Portfolio = () => {
@@ -47,7 +45,7 @@ const Portfolio = () => {
           {filters.map((item, index) => (
             <div
               key={index}
-              className={`bg-[#252525] rounded-lg py-[10px] px-[17px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] cursor-pointer whitespace-nowrap ${
+              className={`bg-[#252525]  py-[10px] px-[17px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] cursor-pointer whitespace-nowrap ${
                 selectedTag === item.id ? "bg-[#f6f6f6] text-black" : ""
               }`}
               onClick={() => filterHandler(item.id)}
@@ -63,15 +61,21 @@ const Portfolio = () => {
           {projectData.map((item, index) => {
             return (
               <Div key={index} className="flex flex-col gap-4 cursor-pointer">
-                <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
-                  <img
-                    src={item.image.src}
-                    className="transition-transform hover:-translate-y-[25%] hover:duration-1000 ease-linear"
-                  />
+                <div className="bg-black  aspect-video overflow-hidden md:hover:scale-105 md:duration-200">
+                  <a href="https://h3lios.in" target="_blank">
+                    <img
+                      src={item.image.src}
+                      className="transition-transform hover:-translate-y-[30%]  hover:duration-1000 ease-linear"
+                    />
+                  </a>
                 </div>
-                <div className="text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center">
-                  {item.name.src}
-                </div>
+                <a
+                  href={item.link} target="_blank"
+                >
+                  <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] hover:text-blue-300  text-center">
+                    {item.name}
+                  </div>
+                </a>
               </Div>
             );
           })}

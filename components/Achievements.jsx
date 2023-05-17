@@ -1,5 +1,4 @@
 import React from "react";
-
 import { achievements } from "../utils/data";
 import NumInc from "./NumInc";
 import dashedCircle from "../public/assets/dashed-circle.svg";

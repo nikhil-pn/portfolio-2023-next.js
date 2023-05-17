@@ -34,7 +34,7 @@ const H3lios = () => {
           <img
             alt="h3lios.in image "
             className="hover:scale-105 duration-200"
-            src="/513shots_so.png"
+            src="/513shots_so.webp"
           ></img>
         </Link>
       </Wrapper2>

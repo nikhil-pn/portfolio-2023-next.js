@@ -1,11 +1,8 @@
 "use client"
 import React from "react";
-import Wrapper from "@/components/Wrapper";
 import Div from "@/components/Div";
 import Form from "@/components/Form";
 import Wrapper2 from "./Wrapper2";
-
-
 
 const Contact = () => {
   return (
@@ -29,7 +26,6 @@ const Contact = () => {
           </div>
         </Div>
         {/* SECTION HEADING END */}
-
         <Form></Form>
       </Wrapper2>
     </div>

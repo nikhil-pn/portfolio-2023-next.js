@@ -1,5 +1,4 @@
 import React from "react";
-
 const Wrapper2 = ({ children, className }) => {
   return (
     <div

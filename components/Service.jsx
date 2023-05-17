@@ -4,10 +4,6 @@ import Div from "./Div";
 const Service = ({ num, title, desc, data }) => {
     return (
         <Div className="text-white border-b border-[#333333] flex flex-col gap-2 md:gap-4 2xl:gap-5 pb-7 items-center">
-            {/* <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px]">
-                {num}.
-            </div> */}
-            {/* className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1000px] mx-auto" */}
             <div className="text-[28px] 2xl:text-[34px] text-[#f6f6f6] uppercase  text-center mx-auto ">
                 {title}
             </div>

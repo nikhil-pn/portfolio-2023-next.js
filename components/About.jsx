@@ -1,13 +1,10 @@
 "use client";
 import Div from "@/components/Div";
-import Wrapper from "@/components/Wrapper";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import Wrapper2 from "./Wrapper2";
 import CallToAction from "./CallToAction";
 import { AiOutlineCloudDownload } from "react-icons/ai";
-// import Resume from "../../download/file-sample_150kB.pdf";
 
 const About = () => {
   return (
@@ -44,13 +41,9 @@ const About = () => {
           <img
             alt="linkden profile image"
             className="hover:scale-105 duration-200"
-            src="/826shots_so.png"
+            src="/826shots_so.webp"
           ></img>
         </Link>
-        {/* <button className="bg-[#f6f6f6] mt-4 rounded-none h-[48px] w-full   justify-center text-[16px] text-black  transition-transform active:scale-[0.95]">
-          Download CV
-        </button> */}
-
         <CallToAction
           text="Download CV"
           icon={<AiOutlineCloudDownload />}

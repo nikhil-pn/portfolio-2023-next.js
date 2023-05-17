@@ -1,18 +1,9 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-
 import Wrapper from "./Wrapper";
-// import man from "../public/assets/man.png";
-// import externalLinkIcon from "../assets/external-link-icon.png";
-// import gmailIcon from "../assets/email-icon.png";
-import { scrollTo } from "../utils/helper";
 import { useFollowPointer } from "./useFollowPointer";
 import Space from "./Space";
-import MenuHover from "./MenuHover";
-
-
 
 const HeroBanner = () => {
   const [showCatMenu, setShowCatMenu] = useState(false);
@@ -84,7 +75,6 @@ const HeroBanner = () => {
               I Am A FullStack
               <br className="invisible md:visible" />
               Developer
-              {/* <TypewriterComp></TypewriterComp> */}
             </h1>
           </motion.div>
           {/* BIG HEADING END */}

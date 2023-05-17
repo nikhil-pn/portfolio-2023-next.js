@@ -1,13 +1,9 @@
 "use client";
-
 import React from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 
-import Wrapper from "./Wrapper";
 import SkillIcon from "./SkillIcon";
-import Service from "./Service";
 import Portfolio from "./Portfolio";
-import Achievements from "./Achievements";
 import Div from "./Div";
 
 // IMAGES
@@ -28,10 +24,6 @@ import sk15 from "../public/assets/git.png";
 import sk16 from "../public/assets/android.png";
 import sk11 from "../public/assets/solidity.png";
 
-// import pattern from "../public/assets/heading-pattern.png";
-// import pe1 from "../public/assets/sec-3-p-e-1.png";
-// import pe2 from "../public/assets/sec-3-p-e-2.png";
-// import pe3 from "../public/assets/sec-3-p-e-3.png";
 import Wrapper2 from "./Wrapper2";
 import H3lios from "./H3lios";
 import MoreDetails from "./MoreDetails";

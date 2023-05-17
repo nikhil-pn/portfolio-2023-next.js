@@ -1,16 +1,11 @@
 "use client";
-
 import React from "react";
-import { motion, useTransform, useScroll } from "framer-motion";
+import { useTransform, useScroll } from "framer-motion";
 import { dataClient } from "@/utils/data";
-
 import Div from "./Div";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import { Carousel } from "react-responsive-carousel";
 import Wrapper2 from "./Wrapper2";
-import Ntec from "./Ntec";
 
 const Testimonials = () => {
   const { scrollY } = useScroll();

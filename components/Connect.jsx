@@ -26,12 +26,11 @@ const Connect = () => {
         <Link href="https://instagram.com/h3liosdesign" target="_blank">
           <img
             className="hover:scale-105 duration-200"
-            src="/713shots_so.png"
+            src="/713shots_so.webp"
           ></img>
         </Link>
       </Wrapper2>
     </div>
   );
 };
-
 export default Connect;

@@ -4,7 +4,6 @@ import Link from "next/link";
 import Wrapper2 from "./Wrapper2";
 import React from "react";
 import Achievements from "./Achievements";
-import MoreDetails from "./MoreDetails";
 
 const Fiverr = () => {
   return (
@@ -18,31 +17,6 @@ const Fiverr = () => {
             <h2>Hire me</h2>
           </div>
           <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1000px] mx-auto ">
-            {/* <p className="mb-2">
-              I'm Nikhil Pn, a Fullstack developer based in Kochi, India. With a
-              passion for Technology and Entrepreneurship!
-            </p>
-            <p className="mb-2">
-              In 2017, I established a prominent brand on YouTube called "Ntec
-              Phones" which boasts an impressive subscriber base of over 32,000
-              and an astounding total of 6 million plus views.Through this
-              platform, I have leveraged my expertise and knowledge in
-              smartphones to engage with a diverse audience.
-            </p> */}
-            {/* <p>
-              If you're considering hiring me, I invite you to explore my
-              profile on{" "}
-              <Link href="https://www.fiverr.com/h3liosdesign">
-                <span className="font-semibold text-teal-200  cursor-pointer">
-                Fiverr.com
-                </span>
-              </Link>
-              . Our page showcases a diverse range of high-quality products and
-              services tailored to meet your specific requirements. From
-              software development to graphic design.I am more than happy to
-              discuss any custom orders or unique projects you may have in mind.
-              Let's collaborate and bring your ideas to life!
-            </p> */}
             <p>
               In 2019, I ventured into freelancing, exploring new opportunities
               and broadening my horizons. If you're interested in hiring me,
@@ -65,10 +39,9 @@ const Fiverr = () => {
           <img
             alt="h3liosdesing fiverr image "
             className="hover:scale-105 duration-200"
-            src="/533shots_so.png"
+            src="/533shots_so.webp"
           ></img>
         </Link>
-        {/* <MoreDetails></MoreDetails> */}
         <Achievements></Achievements>
       </Wrapper2>
     </div>
