@@ -59,11 +59,11 @@ const HeroBanner = () => {
         <motion.div
           className=" md:flex items-center justify-between mt-[40px] 2xl:mt-[63px] relative"
           initial={{ y: -200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1 }} 
           transition={{ duration: 0.7, delay: 0.25 }}
         >
           <div
-            className={`text-[8px] fixed z-50 items-center gap-[6px] right-8 ${show} `}
+            className={`text-[8px]  fixed z-50 items-center gap-[6px]   right-8 ${show} `}
           >
             <Space
               showCatMenu={showCatMenu}

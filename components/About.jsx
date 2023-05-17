@@ -7,6 +7,7 @@ import React from "react";
 import Wrapper2 from "./Wrapper2";
 import CallToAction from "./CallToAction";
 import { AiOutlineCloudDownload } from "react-icons/ai";
+// import Resume from "../../download/file-sample_150kB.pdf";
 
 const About = () => {
   return (
@@ -39,7 +40,7 @@ const About = () => {
             </p>
           </div>
         </Div>
-        <Link  target="_blank" href="https://www.linkedin.com/in/nikhilpn">
+        <Link target="_blank" href="https://www.linkedin.com/in/nikhilpn">
           <img
             alt="linkden profile image"
             className="hover:scale-105 duration-200"
@@ -53,9 +54,8 @@ const About = () => {
         <CallToAction
           text="Download CV"
           icon={<AiOutlineCloudDownload />}
-          action={() => window.open(Resume)}
+          action={() => window.open("../download/file-sample_150kB.pdf")}
         ></CallToAction>
-
       </Wrapper2>
     </div>
   );

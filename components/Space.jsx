@@ -54,9 +54,10 @@ const Space = ({ showCatMenu, setShowCatMenu }) => {
   }, [lastScrollY]);
 
   return (
-    <div className={`main `}>
+    <div className={`main  `} onMouseEnter={() => setShowCatMenu(true)}>
       <button
-        onMouseEnter={() => setShowCatMenu(true)}
+        className="-mr-4 md:mr-0 -mt-4 md:mt-0 "
+        // onMouseEnter={() => setShowCatMenu(true)}
         // onMouseLeave={() => setShowCatMenu(false)}
       >
         <div className="text">EXPLORE</div>
@@ -1000,7 +1001,7 @@ const Space = ({ showCatMenu, setShowCatMenu }) => {
         ></path>
       </svg>
 
-      <ul className="md:flex text-[16px]  z-50 absolute top-2 right-0 items-center gap-8  text-black">
+      <ul className="md:flex text-[16px] mt-2 md:mt-0  z-50 absolute top-2 right-0 items-center gap-8  text-black">
         {data.map((item) => {
           return (
             <React.Fragment key={item.id}>
