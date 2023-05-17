@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import Wrapper from "./Wrapper";
@@ -12,8 +12,33 @@ import { useFollowPointer } from "./useFollowPointer";
 import Space from "./Space";
 import MenuHover from "./MenuHover";
 
+
+
 const HeroBanner = () => {
   const [showCatMenu, setShowCatMenu] = useState(false);
+  const [show, setShow] = useState("translate-y-0");
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [mobileMenu, setMobileMenu] = useState(false);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 200) {
+      if (window.scrollY > lastScrollY && !mobileMenu) {
+        setShow("-translate-y-[180px]");
+      } else {
+        setShow("");
+      }
+    } else {
+      setShow("translate-y-0");
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
 
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
@@ -38,7 +63,7 @@ const HeroBanner = () => {
           transition={{ duration: 0.7, delay: 0.25 }}
         >
           <div
-            className={`text-[8px] fixed z-50 items-center gap-[6px] right-8`}
+            className={`text-[8px] fixed z-50 items-center gap-[6px] right-8 ${show} `}
           >
             <Space
               showCatMenu={showCatMenu}

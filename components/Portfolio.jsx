@@ -30,11 +30,14 @@ const Portfolio = () => {
         {/* SECTION HEADING START */}
         <Div className="mt-10 mb-10 relative">
           <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald uppercase mb-10 text-[#f6f6f6]">
-            <h2>latest projects</h2>
+            <h2>projects</h2>
           </div>
           <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1000px] mx-auto">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            I take great pleasure in developing cutting-edge real-life
+            applications across various categories. Feel free to explore my
+            portfolio, categorized into frontend, backend, Android apps, and
+            blockchain projects. Your valuable feedback on these projects would
+            be highly appreciated.
           </div>
         </Div>
         {/* SECTION HEADING END */}

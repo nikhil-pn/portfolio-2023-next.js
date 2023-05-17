@@ -11,7 +11,8 @@ const MoreDetails = () => {
             <Service
               num="1"
               title="Front End "
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+              desc="
+              I thrive on crafting visually stunning and premium frontend websites, leveraging Next.js, React.js, Tailwind CSS, JavaScript, and TypeScript to ensure efficient and scalable development for an exceptional user experience."
               data={[
                 "React.js",
                 "Javascript",
@@ -23,20 +24,20 @@ const MoreDetails = () => {
             <Service
               num="2"
               title="Back End"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+              desc="When constructing a robust backend, I prioritize security, scalability, and handling edge cases, employing Node.js, Express, Python, and databases such as SQLite and MongoDB to store data efficiently."
               data={["Node", "Express JS", "SQL", "Mongo DB", "Python"]}
             />
             <Service
               num="3"
               title="Android"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+              desc="I thoroughly enjoy developing native Android apps using the React Native library, enabling swift development, while leveraging Firestore and Redux for data storage and Firebase for authentication purposes."
               data={["React Native", "Android Studio", "Firebase", "SQLite"]}
             />
             <Service
               num="4"
               title="Blockchain"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-              data={["Solidity", "HardHat"]}
+              desc="As a firm believer in the transformative potential of blockchain technology, I am dedicated to continually advancing my skills in Solidity, Hardhat, DApps, Etc development to contribute to the future revolution of blockchain."
+              data={["Solidity", "HardHat", "Dapps"]}
             />
           </div>
         </div>
