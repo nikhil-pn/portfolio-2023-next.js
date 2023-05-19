@@ -3,6 +3,7 @@ import { achievements } from "../utils/data";
 import NumInc from "./NumInc";
 import dashedCircle from "../public/assets/dashed-circle.svg";
 import Div from "./Div";
+import Image from "next/image";
 
 const Achievements = () => {
   return (
@@ -12,10 +13,13 @@ const Achievements = () => {
           key={item.id}
           className="w-full aspect-square flex justify-center items-center relative bg-[#1A1A1A] md:bg-transparent rounded-[10px] "
         >
-          <img
+          <Image
+            width={1000}
+            height={500}
+            alt="dashed circle icons"
             src={dashedCircle.src}
             className="hidden md:block absolute top-0 left-0"
-          />
+          ></Image>
           <div className="flex items-center text-white relative">
             {/* START */}
             <div className="flex items-center justify-center text-center flex-col gap-3 lg:gap-6">

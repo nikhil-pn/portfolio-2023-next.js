@@ -27,7 +27,7 @@ const MenuHover = ({ showCatMenu, setShowCatMenu }) => {
                   <ul className="bg-white absolute top-6 left-0 min-w-[250px] px-1 py-1 text-black shadow-lg">
                     {data?.map((subMenu) => {
                       return (
-                        <li className="h-12 flex justify-between items-center px-3 hover:bg-black/[0.03] rounded-md">
+                        <li key={subMenu.id} className="h-12 flex justify-between items-center px-3 hover:bg-black/[0.03] rounded-md">
                           {subMenu.name}
                           <span className="opacity-50 text-sm">78</span>
                         </li>

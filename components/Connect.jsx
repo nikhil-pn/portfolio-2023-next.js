@@ -3,6 +3,7 @@ import React from "react";
 import Wrapper2 from "./Wrapper2";
 import Div from "./Div";
 import Link from "next/link";
+import Image from "next/image";
 
 const Connect = () => {
   return (
@@ -24,10 +25,13 @@ const Connect = () => {
         </Div>
 
         <Link href="https://instagram.com/h3liosdesign" target="_blank">
-          <img
+          <Image
+            alt="connect with nikhil pn social media instagram"
+            width="1200"
+            height="800"
             className="hover:scale-105 duration-200"
             src="/713shots_so.webp"
-          ></img>
+          ></Image>
         </Link>
       </Wrapper2>
     </div>

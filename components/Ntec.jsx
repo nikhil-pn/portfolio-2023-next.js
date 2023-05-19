@@ -65,7 +65,6 @@ const Ntec = () => {
                 autoPlay
                 playsInline
                 animate={controls}
-               
               >
                 <source src="/ntecend.mp4" type="video/mp4" />
               </motion.video>

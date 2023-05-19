@@ -3,6 +3,7 @@ import Div from "@/components/Div";
 import Link from "next/link";
 import Wrapper2 from "./Wrapper2";
 import React from "react";
+import Image from "next/image";
 
 const H3lios = () => {
   return (
@@ -31,11 +32,13 @@ const H3lios = () => {
           </div>
         </Div>
         <Link target="_blank" href="https://www.h3lios.in">
-          <img
+          <Image
+            width="1200"
+            height="800"
             alt="h3lios.in image "
             className="hover:scale-105 duration-200"
             src="/513shots_so.webp"
-          ></img>
+          ></Image>
         </Link>
       </Wrapper2>
     </div>

@@ -18,9 +18,9 @@ const Contact = () => {
           </div>
           <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center max-w-[1000px] mx-auto">
             We love hearing from you! If you have any questions or
-            would like to place a custom order, please don't hesitate to get in
+            would like to place a custom order&#44; please don&#39;t hesitate to get in
             touch with us. You can drop us an enquiry or message using our
-            contact form, and we'll get back to you as soon as possible. We are
+            contact form&#44; and we&#39;ll get back to you as soon as possible. We are
             committed to providing excellent customer service and look forward
             to the opportunity to serve you!
           </div>

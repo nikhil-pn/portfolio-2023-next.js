@@ -5,6 +5,7 @@ import React from "react";
 import Wrapper2 from "./Wrapper2";
 import CallToAction from "./CallToAction";
 import { AiOutlineCloudDownload } from "react-icons/ai";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -15,13 +16,13 @@ const About = () => {
       <Wrapper2>
         <Div className=" mt-10 mb-10 relative ">
           <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald uppercase mb-10 text-[#f6f6f6]">
-            <h1>"The VOYAGE of Nikhil PN"</h1>
+            <h1>&quot;The VOYAGE of Nikhil PN&quot;</h1>
           </div>
           <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1000px] mx-auto ">
             <p className="mb-2">
-              I'm Nikhil Pn, a Fullstack developer based in Kochi, India. With a
+              I&#34;m Nikhil Pn, a Fullstack developer based in Kochi, India. With a
               passion for Technology and Entrepreneurship! In 2017, I
-              established a prominent brand on YouTube called "Ntec Phones"
+              established a prominent brand on YouTube called &quot;Ntec Phones&quot;
               which boasts an impressive subscriber base of over 32,000 and an
               astounding total of 6 million plus views.Through this platform, I
               have leveraged my expertise and knowledge in smartphones to engage
@@ -38,11 +39,13 @@ const About = () => {
           </div>
         </Div>
         <Link target="_blank" href="https://www.linkedin.com/in/nikhilpn">
-          <img
+          <Image
+          width="1200"
+          height="800"
             alt="linkden profile image"
             className="hover:scale-105 duration-200"
             src="/826shots_so.webp"
-          ></img>
+          ></Image>
         </Link>
         <CallToAction
           text="Download CV"

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { projects, filters } from "../utils/data";
 import Div from "./Div";
 import Wrapper2 from "./Wrapper2";
+import Image from "next/image";
 
 const Portfolio = () => {
   const [selectedTag, setSelectedTag] = useState("all");
@@ -63,15 +64,16 @@ const Portfolio = () => {
               <Div key={index} className="flex flex-col gap-4 cursor-pointer">
                 <div className="bg-black  aspect-video overflow-hidden md:hover:scale-105 md:duration-200">
                   <a href="https://h3lios.in" target="_blank">
-                    <img
+                    <Image
+                      height="800"
+                      width="1200"
+                      alt="project images"
                       src={item.image.src}
                       className="transition-transform hover:-translate-y-[30%]  hover:duration-1000 ease-linear"
                     />
                   </a>
                 </div>
-                <a
-                  href={item.link} target="_blank"
-                >
+                <a href={item.link} target="_blank">
                   <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] hover:text-blue-300  text-center">
                     {item.name}
                   </div>

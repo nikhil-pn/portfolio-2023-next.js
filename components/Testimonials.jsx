@@ -6,6 +6,7 @@ import Div from "./Div";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Wrapper2 from "./Wrapper2";
+import Image from "next/image";
 
 const Testimonials = () => {
   const { scrollY } = useScroll();
@@ -49,7 +50,10 @@ const Testimonials = () => {
                 key={Math.random(1)}
               >
                 <div className="mb-[25px]">
-                  <img
+                  <Image
+                  alt="client images"
+                  width="1200"
+                  height="800"
                     src={item.image}
                     className="w-[80px] h-[80px] max-w-[80px] rounded-full"
                   />
