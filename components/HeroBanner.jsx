@@ -71,11 +71,11 @@ const HeroBanner = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-[50px] text-black/90 md:-mt-16 md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
+            <h2 className="text-[50px] text-black/90 md:-mt-16 md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
               I Am A FullStack
               <br className="invisible md:visible" />
               Developer
-            </h1>
+            </h2>
           </motion.div>
           {/* BIG HEADING END */}
 
