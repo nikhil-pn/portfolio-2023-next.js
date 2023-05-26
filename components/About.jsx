@@ -50,7 +50,7 @@ const About = () => {
         <CallToAction
           text="Download CV"
           icon={<AiOutlineCloudDownload />}
-          action={() => window.open("../download/file-sample_150kB.pdf")}
+          action={() => window.open("../download/nikhilpncv.pdf")}
         ></CallToAction>
       </Wrapper2>
     </div>
